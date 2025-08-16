@@ -1,0 +1,80 @@
+:root {
+  --red: #0fa4b5;
+  --dark: #b5caef;
+  --yellow: #ffd400;
+  --black: #111;
+  --pink: #ff2a98;
+  --footer: #ff0099;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background: #fff; }
+
+/* header สีแดงใหญ่ */
+.top-header {
+  background: var(--red);
+  color: #969696;
+  text-align: center;
+  padding: 28px 0;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* แถบดำด้านบน พร้อมลิงก์เล็กๆ และช่องค้นหาทางขวา */
+.dark-bar {
+  background: var(--dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 12px;
+}
+.dark-bar .left-links { display:flex; gap:16px; list-style:none; padding:0; margin:0; font-size:12px; text-transform: uppercase; font-family: monospace; }
+.dark-bar .left-links li { padding:6px 8px; background: rgba(0,0,0,.3); border-radius:4px; }
+.dark-bar .search-area { margin-left:auto; display:flex; align-items:center; gap:8px; }
+.dark-bar input { padding:10px 12px; border:0; border-radius:6px; width:210px; }
+.dark-bar .btn-go { background: var(--pink); color:#fff; border:0; padding:10px 14px; border-radius:6px; font-weight:700; cursor:pointer; }
+
+/* เลย์เอาต์สองคอลัมน์ */
+.layout {
+  display:grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 20px;
+  padding: 16px;
+}
+.left { background:#fff; padding:16px; border:1px solid #ddd; min-height: 320px; }
+.left h2 { margin-top:0; }
+
+/* ตารางคะแนนด้านซ้าย */
+.grades { width:100%; border-collapse: collapse; }
+.grades thead tr { background: var(--red); color: #fff; }
+.grades th, .grades td { padding: 12px 10px; border-bottom: 1px solid #ddd; }
+.grades tr.total td { background: var(--pink); color: #fff; }
+
+/* เมนูด้านขวาสีเหลือง */
+.right-menu { background: #ffd400; padding: 0; display:flex; flex-direction:column; gap:12px; }
+.right-menu a {
+  display:block;
+  padding:12px 14px;
+  background: #111;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  border-radius:6px;
+  margin: 8px;
+}
+.site-footer { background: var(--footer); height: 120px; display:flex; align-items:center; justify-content:center; color:#fff; }
+
+/* responsive สำหรับหน้าจอเล็กลง */
+@media (max-width: 900px){
+  .layout { grid-template-columns: 1fr; }
+  .right-menu { order: -1; }
+  .dark-bar { flex-wrap: wrap; }
+  .dark-bar input { width: 100%; max-width: 400px; }
+}
+
+.navbar a:hover {
+    background-color:#b4b4b4;
+    color: rgb(0, 0, 0);
+}
