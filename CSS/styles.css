@@ -38,10 +38,11 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
 
 /* เลย์เอาต์สองคอลัมน์ */
 .layout {
-  display:grid;
-  grid-template-columns: 1.6fr 0.9fr;
-  gap: 20px;
-  padding: 16px;
+    margin-right:right;
+    display:grid;
+    grid-template-columns: 1.6fr 0.9fr;
+    gap: 20px;
+    padding: 16px;
 }
 .left { background:#fff; padding:16px; border:1px solid #ddd; min-height: 320px; }
 .left h2 { margin-top:0; }
@@ -52,18 +53,27 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
 .grades th, .grades td { padding: 12px 10px; border-bottom: 1px solid #ddd; }
 .grades tr.total td { background: var(--pink); color: #fff; }
 
-/* เมนูด้านขวาสีเหลือง */
-.right-menu { background: #8ba2c0; padding: 0; display:flex; flex-direction:column; gap:12px; }
-.right-menu a {
-  display:block;
-  padding:12px 14px;
-  background: #455464;
-  color:#d3d3d3;
-  text-decoration:none;
-  font-weight:700;
-  border-radius:6px;
-  margin: 8px;
+/* เมนูด้านข   */
+.right-menu {
+    position: absolute;
+    background-color: #6b57ff;
+    top: 200px;
+    right: 20px;
+    width: 400px;
 }
+
+.right-menu a {
+    display: block;
+    padding: 12px 14px;
+    background: #455464;
+    color: #d3d3d3;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+
 .site-footer { background: var(--footer); height: 120px; display:flex; align-items:center; justify-content:center; color:#fff; }
 
 /* responsive สำหรับหน้าจอเล็กลง */
@@ -84,4 +94,9 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
     padding: 20px 20px;
     text-decoration: none;
     text-align: center;
+}
+img {
+    display: block;
+    margin-left: left;
+    margin-right: right;
 }
