@@ -1,10 +1,10 @@
 :root {
-  --red: #0fa4b5;
-  --dark: #b5caef;
-  --yellow: #ffd400;
-  --black: #111;
-  --pink: #ff2a98;
-  --footer: #ff0099;
+  --red: #6b57ff;
+  --dark: #87aff6;
+  --yellow: #adddff;
+  --black: #919191;
+  --pink: #565455;
+  --footer: #828282;
 }
 
 * { box-sizing: border-box; }
@@ -14,7 +14,7 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
 /* header สีแดงใหญ่ */
 .top-header {
   background: var(--red);
-  color: #969696;
+  color: #cecece;
   text-align: center;
   padding: 28px 0;
   font-weight: 700;
@@ -24,7 +24,7 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
 /* แถบดำด้านบน พร้อมลิงก์เล็กๆ และช่องค้นหาทางขวา */
 .dark-bar {
   background: var(--dark);
-  color: #fff;
+  color: #ffffff;
   display: flex;
   align-items: center;
   padding: 8px 12px;
@@ -53,12 +53,12 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
 .grades tr.total td { background: var(--pink); color: #fff; }
 
 /* เมนูด้านขวาสีเหลือง */
-.right-menu { background: #ffd400; padding: 0; display:flex; flex-direction:column; gap:12px; }
+.right-menu { background: #8ba2c0; padding: 0; display:flex; flex-direction:column; gap:12px; }
 .right-menu a {
   display:block;
   padding:12px 14px;
-  background: #111;
-  color:#fff;
+  background: #455464;
+  color:#d3d3d3;
   text-decoration:none;
   font-weight:700;
   border-radius:6px;
@@ -74,7 +74,14 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
   .dark-bar input { width: 100%; max-width: 400px; }
 }
 
-.navbar a:hover {
-    background-color:#b4b4b4;
-    color: rgb(0, 0, 0);
+.dark-bar a:hover {
+    background-color:#ffffff;
+    color: rgb(78, 78, 78);
+}
+
+.dark-bar a {
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
 }
