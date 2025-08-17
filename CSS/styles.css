@@ -38,13 +38,12 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
 
 /* เลย์เอาต์สองคอลัมน์ */
 .layout {
-    margin-right:right;
     display:grid;
     grid-template-columns: 1.6fr 0.9fr;
     gap: 20px;
     padding: 16px;
 }
-.left { background:#fff; padding:16px; border:1px solid #ddd; min-height: 320px; }
+.left { background:#e2e2e2; padding:16px; border:1px solid #ddd; min-height: 320px; }
 .left h2 { margin-top:0; }
 
 /* ตารางคะแนนด้านซ้าย */
@@ -55,26 +54,27 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
 
 /* เมนูด้านข   */
 .right-menu {
-    position: absolute;
     background-color: #6b57ff;
-    top: 200px;
-    right: 20px;
-    width: 400px;
+    padding: 150px;
+    position: absolute;
+    right: 300px;
+    width: 100px;
+    top: 100px;
 }
 
 .right-menu a {
     display: block;
-    padding: 12px 14px;
     background: #455464;
     color: #d3d3d3;
+    padding: 25px 80px;
+    margin: 8px;
     text-decoration: none;
     font-weight: 700;
     border-radius: 6px;
-    margin: 8px;
+    margin-right: right;
 }
 
-
-.site-footer { background: var(--footer); height: 120px; display:flex; align-items:center; justify-content:center; color:#fff; }
+.site-footer { background: var(--footer); height: 120px; display:flex; align-items:center; justify-content:center; color:#f0f0f0; }
 
 /* responsive สำหรับหน้าจอเล็กลง */
 @media (max-width: 900px){
@@ -84,19 +84,22 @@ html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background
   .dark-bar input { width: 100%; max-width: 400px; }
 }
 
+/* สำหรับตัวหนังสือตรงbar */
 .dark-bar a:hover {
-    background-color:#ffffff;
+    background-color:#bcbcbc;
     color: rgb(78, 78, 78);
 }
 
 .dark-bar a {
-    color: white;
+    color: rgb(250, 250, 250);
     padding: 20px 20px;
     text-decoration: none;
     text-align: center;
 }
-img {
-    display: block;
-    margin-left: left;
-    margin-right: right;
+
+.image-container img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
 }
+
